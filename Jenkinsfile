@@ -6,7 +6,7 @@ pipeline {
                 stage('Build') {
                     steps {
                         echo "Compilation en cours..."
-                        sh 'sleep 3' // Simulation du build
+                         'sleep 3' // Simulation du build
                     }
                 }
                 stage('Tests Unitaires') {
