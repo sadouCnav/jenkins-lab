@@ -6,8 +6,7 @@ pipeline {
                 stage('Build') {
                     steps {
                         echo "Compilation en cours..."
-                         'sleep 3' // Simulation du build
-                         bat 'timeout /t 3 /nobreak > nul'
+                        bat 'sleep 3' // Simulation du build
                     }
                 }
                 stage('Tests Unitaires') {
